@@ -37,7 +37,7 @@ public class SalaryController {
     }
 
     @RequestMapping(value = "/salary", method = RequestMethod.PUT)
-    public RespBean updateSalary(Salary salary) {
+    public RespBean updateSalary(Salary salary)  {
         if (salaryService.updateSalary(salary) == 1) {
             return RespBean.ok("更新成功!");
         }
